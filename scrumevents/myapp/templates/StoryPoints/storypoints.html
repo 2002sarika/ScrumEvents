@@ -1,0 +1,47 @@
+<!-- myapp/templates/myapp/story_points.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Points Entry</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        .container {
+            margin-top: 50px;
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 20px;
+            width: 50% ;
+        }
+        h3 {
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            width: 100%; /* Full-width button */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" id="add-story-points-tab" href="{% url 'add-story-points' %}">Add Story Points</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="view-story-points-tab" href="{% url 'view-story-points' %}">View Story Points</a>
+                </li>
+            </ul>              
+        </div>
+        
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
